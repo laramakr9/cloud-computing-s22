@@ -1,0 +1,17 @@
+# This is a basic workflow that is triggered on push
+
+name: Basic Push Triggered Workflow
+
+on:
+  push
+
+jobs:
+  echo-on-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'Echo something'
+      run: 'echo I was triggered and here is proof.'  
+      
+    - name: 'Show where I am'
+      run: 'pwd'      
