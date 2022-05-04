@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webserver2-deployment
+  name: webserver-deployment
   labels:
-    app: webserver2
+    app: webserver
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: webserver2
+      app: webserver
   template:
     metadata:
       labels:
-        app: webserver2
+        app: webserver
     spec:
       containers:
-      - name: webserver2
-        image: gcr.io/notional-analog-289120/webserver2:1
+      - name: webserver
+        image: gcr.io/curious-arcanum-339704/webserver:1
         ports:
         - containerPort: 80
