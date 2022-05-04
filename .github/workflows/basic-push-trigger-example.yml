@@ -13,5 +13,5 @@ jobs:
     - name: 'Echo something'
       run: 'echo I was triggered and here is proof.'  
       
-    - name: 'Show where I am'
+    - name: 'Print working directory'
       run: 'pwd'      
