@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: webserver2
+  name: webserver
 spec:
   containers:
-  - name: webserver2
-    image: gcr.io/notional-analog-289120/webserver2:1
+  - name: webserver
+    image: gcr.io/notional-analog-289120/webserver:1
     ports:
     - containerPort: 80
